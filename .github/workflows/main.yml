@@ -37,11 +37,11 @@ jobs:
       run: pwd && ls -al
     - name: Upload Files
       id: upload
-      uses: Creepios/sftp-action@v1.0.3
-      with:
-        host: '127.0.0.1'
-        port: 22
-        username: 'root'
-        password: 'password'
-        localPath: './target/*.jar'
-        remotePath: './'
+      # uses: Creepios/sftp-action@v1.0.3
+      # with:
+      #   host: '127.0.0.1'
+      #   port: 22
+      #   username: 'root'
+      #   password: 'password'
+      #   localPath: './target/*.jar'
+      #   remotePath: './'
