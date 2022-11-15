@@ -35,8 +35,8 @@ jobs:
       working-directory: staging
     - name: filecheck
       run: pwd && ls -al
-    - name: Upload Files
-      id: upload
+    # - name: Upload Files
+    #   id: upload
       # uses: Creepios/sftp-action@v1.0.3
       # with:
       #   host: '127.0.0.1'
