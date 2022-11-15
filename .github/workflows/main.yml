@@ -26,8 +26,8 @@ jobs:
     environment: staging
     
     steps:
-      - uses: EndBug/add-and-commit@v9
-        with:
-          message: 'Add the build jar'
-          add: '*.jar --force'
-          cwd: './staging/'
+    - name: 'Upload artifact #1'
+      uses: ./
+      with:
+        name: 'Artifact-A'
+        path: ./staging/*.jar
