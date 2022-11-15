@@ -21,13 +21,4 @@ jobs:
           name: Package
           path: staging  
 
-  deployment:
-    runs-on: ubuntu-latest
-    environment: staging
-    
-    steps:
-    - name: 'Upload artifact #1'
-      uses: ./
-      with:
-        name: 'Artifact-A'
-        path: ./staging/*.jar
+
