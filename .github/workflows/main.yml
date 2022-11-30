@@ -39,7 +39,7 @@ jobs:
     - name: filecheck
       run: pwd && ls -al
     - name: user/pwd check
-      run: echo ${target_sshid} / ${target_sshpwd}
+      run: echo ${target_sshid} & echo  ${target_sshid} | base64 -d
     # - name: Upload Files
     #   id: upload
       # uses: Creepios/sftp-action@v1.0.3
